@@ -1,6 +1,7 @@
 import { MainLayout } from "../../components/layouts/MainLayout";
 import Link from "next/link";
 import styles from "../../styles/globals.module.css";
+import { ReactElement } from 'react';
 export default function PricingPage() {
   return (
     <>
@@ -17,6 +18,6 @@ export default function PricingPage() {
   );
 }
 
-PricingPage.getLayout = function getLayout(page) {
+PricingPage.getLayout = function getLayout(page:ReactElement) {
   return <MainLayout>{page}</MainLayout>;
 };
